@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BestBarter</title>
+    <link rel="stylesheet" href="vendor/css/slick.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/css/slick-theme.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dropzone.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body >
+<section id="Header">
+     <div class="container">
+         <div class="header-all row justify-content-end">
+             <div class="col-md-2" style="display: block;">
+                 <img style="width: 3%" src="image/loqonew.png" alt="">
+             </div>
+             <div class="col-md-10 row justify-content-end">
+                 <div class="lang col-md-4 text-right p-0">
+                   <img style="width: 5%;cursor: pointer;margin-left: 4px;" src="image/azerbaijan.png" alt="">
+                   <span style="padding-left: 5px;font-weight:bold;font-size:11px;padding-right:5px;cursor:pointer;border-right: 1px solid #868686">AZ</span>
+                   <img style="width: 5%;cursor: pointer;margin-left: 4px;" src="image/england.png" alt="">
+                   <span style="padding-left: 5px;font-weight:bold;font-size:11px;padding-right:5px;cursor:pointer;border-right: 1px solid #868686">ENG</span>
+                   <img style="width: 5%;cursor: pointer;margin-left: 4px;" src="image/russia.png" alt="">
+                   <span style="padding-left: 5px;font-weight:bold;font-size:11px;padding-right:5px;cursor:pointer;border-right: 1px solid #868686">RUS</span>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+
+
+ <section id="Header2">
+     <div class="container p-0">
+         <div class="header2-all row">
+           <div class="col-md-2">
+              <img style="width: 100%" src="image/loqonew.png" alt="">
+           </div>
+           <div class="col-md-5">
+              <nav class="navbar navbar-expand-lg">
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link btn btn-5" href="index.html">Ana Səhifə</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn btn-5" href="#">Hərraclar</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn btn-5" href="#">Mağazalar</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+           </div>
+                <div class="col-md-5 user-box row justify-content-end" style="padding-top: 8px;z-index: 999">
+                    <div class="dropdown col-md-5">
+                        <button onclick="myFunction()" class="dropbtn" style="border-radius: 5px;border: 1px solid #fff;background: transparent"><i class="fas fa-user"></i><span>Giriş</span></button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <p id="login">Daxil Ol</p>
+                          <p id="register">Qeydiyyat</p>
+                        </div>
+                      </div>
+                      <div class="col-md-5" style="padding: 0;">
+                          <button id="addElan" type="button" style="border-radius: 5px;background: #868686;padding:7px 10px 6px 6px;border: 1px solid #fff;background: #4267B2" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
+                              <i class="fas fa-plus-circle" style="color: #fff;font-size: 25px;"><span style="padding-left:10px;font-size: 17px;color: #fff">Elan Əlavə Et</span></i>                        
+                            </button>
+                      </div>
+                 </div>
+         </div>
+     </div>
+ </section>
+   
+
+ <section id="Add">
+     <div class="container">
+         <div class="add-all row">
+             <div class="col-md-4 mt-5">
+                <div class="img-left">
+                    <form action="/file-upload" id="my-awesome-dropzone" class="dropzone">
+                        <i class="fas fa-download"><span>Əsas şəkli yükləyin</span></i>
+                    </form>
+                </div>
+                <div class="barter-box row pl-3">
+                    <div class="barter-box1">
+                    <p>Nələr ilə barter etmək olar?</p>
+                    <hr>
+                    <div class="nelerile row">
+                        <div class="col-md-6 pr-0">
+                            <input type="checkbox">
+                            <span>Nəqliyyat</span>
+                            <br>
+                            <input type="checkbox">
+                            <span>Ev & Torpaq</span>
+                            <br>
+                            <input type="checkbox">
+                            <span>Məişət əşyası</span>
+                            <br>
+                            <input type="checkbox">
+                            <span>Geyim</span>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="checkbox">
+                            <span>Aksesuar</span>
+                            <br>
+                            <input type="checkbox">
+                            <span>Elektronika</span>
+                            <br>
+                            <input type="checkbox">
+                            <span>Məişət</span>
+                            <br>
+                            <input type="checkbox">
+                            <span>İdman üçün</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+             </div>
+             <div class="col-md-8 add-right mt-5 pr-0">
+                <form action="/file-upload"
+                class="dropzone"
+           id="my-awesome-dropzone"><i class="fas fa-download"><span>Digər Şəkilləri yükləyin</span></i></form>
+                 <div class="category pt-4 pl-3 row">
+                     <h4 class="pr-3">Kateqoriya :</h4>
+                     <select name="" id="">
+                         <option value="">Əmlak</option>
+                         <option value="">Aksesuar</option>
+                         <option value="">Məişət</option>
+                         <option value="">Avtomobil</option>
+                     </select>
+                     <i class="fas fa-arrows-alt-h"></i>
+                     <select name="" id="">
+                         <option value="">Avtomobil</option>
+                         <option value="">Avtomobil</option>
+                         <option value="">Avtomobil</option>
+                         <option value="">Avtomobil</option>
+                         <option value="">Avtomobil</option>
+                     </select>
+                 </div>
+                 <div class="price pt-4 pl-3 row">
+                     <h4 class="pr-3">Qiymət :</h4>
+                     <input style="margin-left: 38px" type="text" placeholder="Min">
+                     <i class="fas fa-arrows-alt-h"></i>
+                     <input type="text" placeholder="Max">
+                 </div>
+                 <div class="city pt-4 pl-3 row">
+                     <h4 class="pr-4">Region :</h4>
+                      <select name="val[search_city_id]">
+                  <option>Şəhər</option>
+                    <option value="2">Bakı</option>
+                    <option value="3">Ağdam</option>
+                    <option value="4">Ağdaş</option>
+                    <option value="5">Ağstafa</option>
+                    <option value="6">Ağsu</option>
+                    <option value="7">Astara</option>
+                    <option value="8">Balakən</option>
+                    <option value="9">Beyləqan</option>
+                    <option value="10">Bərdə</option>
+                    <option value="11">Biləsuvar</option>
+                    <option value="12">Cəlilabad</option>
+                    <option value="13">Culfa</option>
+                    <option value="14">Daşkəsən</option>
+                    <option value="15">Füzuli</option>
+                    <option value="16">Gədəbəy</option>
+                    <option value="17">Gəncə</option>
+                    <option value="18">Goranboy</option>
+                    <option value="19">Göyçay</option>
+                    <option value="20">Göygöl</option>
+                    <option value="21">Göytəpə</option>
+                    <option value="22">Hacıqabul</option>
+                    <option value="23">Horadiz</option>
+                    <option value="24">İmişli</option>
+                    <option value="25">İsmayıllı</option>
+                    <option value="26">Kürdəmir</option>
+                    <option value="27">Lerik</option>
+                    <option value="28">Lənkəran</option>
+                    <option value="29">Masallı</option>
+                    <option value="30">Mingəçevir</option>
+                    <option value="31">Nabran</option>
+                    <option value="32">Naftalan</option>
+                    <option value="33">Naxçıvan</option>
+                    <option value="34">Neftçala</option>
+                    <option value="35">Oğuz</option>
+                    <option value="36">Qax</option>
+                    <option value="37">Qazax</option>
+                    <option value="38">Qəbələ</option>
+                    <option value="39">Qobustan</option>
+                    <option value="40">Quba</option>
+                    <option value="41">Qusar</option>
+                    <option value="42">Saatlı</option>
+                    <option value="43">Sabirabad</option>
+                    <option value="44">Şabran</option>
+                    <option value="45">Salyan</option>
+                    <option value="46">Şamaxı</option>
+                    <option value="47">Şəki</option>
+                    <option value="48">Şəmkir</option>
+                    <option value="49">Şirvan</option>
+                    <option value="50">Siyəzən</option>
+                    <option value="51">Sumqayıt</option>
+                    <option value="52">Tərtər</option>
+                    <option value="53">Tovuz</option>
+                    <option value="54">Ucar</option>
+                    <option value="55">Xaçmaz</option>
+                    <option value="56">Xırdalan</option>
+                    <option value="57">Xızı</option>
+                    <option value="58">Xudat</option>
+                    <option value="59">Yevlax</option>
+                    <option value="60">Zaqatala</option>
+                    <option value="61">Zərdab</option>
+                </select>
+                 </div>
+                 <div class="number pt-4 pl-3 row">
+                    <h4 class="pr-4">Nömrə :</h4>
+                    <select style="margin-left: 33px" name="" id="">
+                        <option value="">050</option>
+                        <option value="">051</option>
+                        <option value="">055</option>
+                        <option value="">070</option>
+                        <option value="">077</option>
+                        <option value="">060</option>
+                    </select>
+                    <h3 style="padding: 0 14px">-</h3>
+                    <input type="text">
+                 </div>
+                 <div class="addtext pt-4">
+                    <textarea name="" id="" cols="90" rows="5"></textarea>
+                 </div>
+                 <div class="send text-center pt-4">
+                     <button type="button">Elanı Göndər</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+ </section>
+</body>
+<script src="vendor/js/jquery-3.4.1.js"></script>
+<script src="js/dropzone.js"></script>
+
+<script src="js/jquery.particleground.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="vendor/js/slick.js"></script>
+<script src="js/app.js"></script>
+</html>
